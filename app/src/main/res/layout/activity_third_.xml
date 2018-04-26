@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="faysal.advance_calculator.Third_Activity">
+
+    <EditText
+        android:id="@+id/inputtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Taka"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <RadioButton
+        android:id="@+id/rbusd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inputtxt"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="30dp"
+        android:text="USD" />
+
+    <RadioButton
+        android:id="@+id/rbcad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rbusd"
+        android:layout_alignBottom="@+id/rbusd"
+        android:layout_centerHorizontal="true"
+        android:text="CAD" />
+
+    <RadioButton
+        android:id="@+id/rbinr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rbcad"
+        android:layout_alignBottom="@+id/rbcad"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/rbcad"
+        android:text="INR" />
+
+
+    <Button
+        android:id="@+id/btnconvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtresult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="#3166bc"
+        android:text="Convert"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/txtresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Converted currency"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnconvert"
+        android:layout_alignTop="@+id/btnconvert"
+        android:layout_marginTop="56dp"
+        android:text="Back"
+        android:background="#3166bc"
+        android:textColor="#ffffff"/>
+
+    <RadioButton
+        android:id="@+id/rbeuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rbusd"
+        android:layout_below="@+id/rbusd"
+        android:layout_marginTop="22dp"
+        android:text="EURO" />
+
+
+</RelativeLayout>
